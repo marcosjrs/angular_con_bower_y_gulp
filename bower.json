@@ -1,0 +1,22 @@
+{
+  "name": "angularjs-en-nodejs",
+  "description": "Creacion de una projecto angular con npm y bajo nodejs",
+  "main": "index.js",
+  "authors": [
+    "marcosjrs <marcosjrs80@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.4.9",
+    "bootstrap": "^3.3.6"
+  }
+}
