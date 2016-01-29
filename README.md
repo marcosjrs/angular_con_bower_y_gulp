@@ -79,28 +79,28 @@ para que ejecute el gulpfile.js y por tanto ejecute las tareas mencionadas...
 **Se creo la estructura de carpetas tal que:**
 
 root-app-folder  (en nuestro caso carpeta app)
-├── index.html
-├── scripts
-│   ├── controllers
-│   │   └── main.js
-│   │   └── ...
-│   ├── directives
-│   │   └── myDirective.js
-│   │   └── ...
-│   ├── filters
-│   │   └── myFilter.js
-│   │   └── ...
-│   ├── services
-│   │   └── myService.js
-│   │   └── ...
-│   ├── vendor
-│   │   ├── angular.min.js
-│   └── app.js
-├── styles
-│   └── ...
-└── views
-    ├── main.html
-    └── ...
+    ├── index.html
+    ├── scripts
+    │   ├── controllers
+    │   │   └── main.js
+    │   │   └── ...
+    │   ├── directives
+    │   │   └── myDirective.js
+    │   │   └── ...
+    │   ├── filters
+    │   │   └── myFilter.js
+    │   │   └── ...
+    │   ├── services
+    │   │   └── myService.js
+    │   │   └── ...
+    │   ├── vendor
+    │   │   ├── angular.min.js
+    │   └── app.js
+    ├── styles
+    │   └── ...
+    └── views
+        ├── main.html
+        └── ...
 
 **Instalamos bower (gestor de dependencias que tira de bower.json)**
 
