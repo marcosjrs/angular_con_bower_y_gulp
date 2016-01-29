@@ -1,8 +1,5 @@
-# angular_con_bower_y_gulp
-Angularjs mediante bower y con gulp para tareas típicas 
-
 Angularjs instalado mediante bower y con gulp para tareas típicas
-===============================
+=================================================================
 
 
 **Se creó una carpeta**
@@ -199,5 +196,4 @@ Y la reemplazamos por esta.-
 
 
 Créditos: codeando.org
-
-    enter code here
+======================
