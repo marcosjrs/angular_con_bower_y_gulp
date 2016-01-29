@@ -194,6 +194,22 @@ Y la reemplazamos por esta.-
         "dist/css/bootstrap.css"
     ],
 
+Para descargar y ejecutar este proyecto
+=======================================
+Al github no he subido los módulos, por tanto los hay que descargar a posteriori. Los pasos son los siguientes:
+
+Clonar el proyecto
+    git clone https://github.com/marcosjrs/angular_con_bower_y_gulp.git
+
+Luego en la carpeta app, crear una carpeta llamada vendor, que es donde se instalaran los modulos mediante bower.
+
+Instalar las dependencias.
+    npm install
+    bower install
+
+Arrancar las tareas.
+    gulp
+
 
 Créditos: codeando.org
 ======================
