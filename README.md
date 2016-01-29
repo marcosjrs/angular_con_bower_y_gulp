@@ -136,46 +136,46 @@ root-app-folder  (en nuestro caso carpeta app)
 **Y moodificamos el gulpfile.js de nuevo, para crear los nuevos task para que haga la injeccion de archivos que mencionabamos**
 
 
-gulp.task("inject", ["wiredep"] ,function () {
-    var sources = gulp.src(["./app/scripts/**/*.js", "./app/styles/**/*.css"]);
+	gulp.task("inject", ["wiredep"] ,function () {
+	    var sources = gulp.src(["./app/scripts/**/*.js", "./app/styles/**/*.css"]);
 
-    return gulp.src("index.html", {
-	cwd: "./app"
-    })
-    .pipe(inject(sources, {
-	read: false
-    }))
-    .pipe(gulp.dest("./app"));
-});
+	    return gulp.src("index.html", {
+		cwd: "./app"
+	    })
+	    .pipe(inject(sources, {
+		read: false
+	    }))
+	    .pipe(gulp.dest("./app"));
+	});
 
-gulp.task("wiredep", function () {
-    return gulp.src("index.html", {
-	cwd: "./app"
-    })
-    .pipe(wiredep({
-	directory: "./app/vendor",
-	read: false,
-	onError: function (err) {
-  	    console.log(err.code);
-	}
-    }))
-    .pipe(gulp.dest("./app"));
-});
+	gulp.task("wiredep", function () {
+	    return gulp.src("index.html", {
+		cwd: "./app"
+	    })
+	    .pipe(wiredep({
+		directory: "./app/vendor",
+		read: false,
+		onError: function (err) {
+	  	    console.log(err.code);
+		}
+	    }))
+	    .pipe(gulp.dest("./app"));
+	});
 
-gulp.task("watch", function () {
-    gulp.watch(["./app/**/*.html"], ["html"]);
-    gulp.watch(["./app/scripts/**/*.js"], ["inject"]);
-    gulp.watch(["./app/styles/**/*.css"], ["inject"]);
-    gulp.watch(["./bower.json"], ["wiredep"]);
-});
+	gulp.task("watch", function () {
+	    gulp.watch(["./app/**/*.html"], ["html"]);
+	    gulp.watch(["./app/scripts/**/*.js"], ["inject"]);
+	    gulp.watch(["./app/styles/**/*.css"], ["inject"]);
+	    gulp.watch(["./bower.json"], ["wiredep"]);
+	});
 
-gulp.task("default", ["inject", "server", "watch"]);
+	gulp.task("default", ["inject", "server", "watch"]);
 
 **Una vez insertado este codigo en gulpfile.js, hay que recordar crear la carpeta /app/vendor, para que bower descargue a esa carpeta tal como hemos puesto en el codigo anterior.**
 
 **Luego podremos empezar a instalar los paquetes mediante bower**
-bower install --save angular
-bower install --save bootstrap
+	bower install --save angular
+	bower install --save bootstrap
 
 
 Al instalar bootstrap con bower notamos que solo se nos inyecta el archivo js a nuestro archivo index.html pero el css no.
@@ -199,3 +199,5 @@ Y la reemplazamos por esta.-
 
 
 Créditos: codeando.org
+
+    enter code here
